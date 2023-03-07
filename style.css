@@ -4,20 +4,26 @@ body{
     height:95%;
 }
 #checkbox{
-    width:20px;
-    height:20px;
-    border: 2px solid blue;
-    border-radius:5px;
-    background-color: white;
-    cursor:pointer;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+#checkbox:checked{
+    background-color: #0059ff;
+    background-image: url(/check.svg);
 }
 .cadastro{
     display:flex;
+    justify-content:space-between;
     border: 2px;
     box-shadow: 6px 6px 6px #a5a5a5;
     box-sizing: border-box;
     flex-direction: row;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins';
 }
 #nomeidade{
     margin-right:10px;
@@ -51,10 +57,10 @@ body{
     cursor:pointer;
     border: none;
     border-radius:10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins';  
 }
 #cadastro_usuario{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Poppins';
     border:none;
     border-radius:10px;
     color:green;
@@ -65,19 +71,19 @@ body{
 h2{
     font-size:30px;
     color:#d3d3d3;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins';
 }
 h3{
     margin-left: 550px;
     font-size:15px;
     color:#a0a0a0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins';
 }
 #h3_cad{
     margin-left: 550px;
     font-size:15px;
     color:#003cff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins';
 }
 #lapis{
     margin-left: 700px;
@@ -89,4 +95,24 @@ h3{
     margin-top:30px;
     height: 30px;
     width: 30px; 
+}
+#lapis1{
+    margin-top:30px;
+    height: 30px;
+    width: 30px;
+}
+#lixo1{
+    margin-top:30px;
+    height: 30px;
+    width: 30px; 
+}
+#icone_pesquisa{
+        width: 20px;
+        height: 20px;
+        margin-left: -30px;
+    }
+@media (max-width: 600px) {
+}
+.teste{
+    display:flex;
 }
